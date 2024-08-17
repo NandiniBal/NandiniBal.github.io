@@ -1,0 +1,288 @@
+/*!******************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/styles.css ***!
+  \******************************************************************/
+@import url(https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap);
+/*!**********************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/styles.css (1) ***!
+  \**********************************************************************/
+.josefin-sans-regular {
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+  }
+
+.josefin-sans-bold {
+  font-family: "Josefin Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+#body {
+    margin: 0;
+    height: 100vh;
+    background-color: #F5F5F5;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    
+}
+
+#main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: "Josefin Sans";
+    padding: 2rem 3rem;
+    height: 100%;
+}
+
+.page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.title {
+    margin: 0.5rem;
+    align-self: start;
+    font-weight: 700;
+    font-size: 3rem;
+    flex-grow: 0;
+}
+
+.innerPage {
+    background-color: #E9F1F7;
+    display: flex; 
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-grow: 1;
+    width: 100%;
+ 
+    border: 5px solid black;
+    border-radius: 30px;
+}
+
+.folders {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-grow: 0;
+    flex-shrink: 0;
+    height: 100%; 
+    margin: 0rem 2rem;
+    flex-basis: 10vw;
+}
+
+.folder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 1rem;
+    box-sizing: content-box;
+}
+
+.folder:hover {
+    background: radial-gradient(circle, #b5d6ef 20%, rgba(181, 214, 239, 0) 80%);
+    border-radius: 15px;
+}
+
+.folder p{
+    font-weight: 700;
+    font-size: 2rem;
+    margin: 0rem;
+    text-align: center;
+}
+
+.folderIcon {
+    align-self: center;
+    width: 8rem;
+    padding-bottom: 0.8rem;
+}
+
+.window {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    height: 90%; 
+    text-align: center;
+    margin-right: 1.8rem;
+    padding: 3rem 2rem;
+    border: 2px solid black;
+    border-radius: 15px;
+    background-color: #F5F5F5;
+}
+
+#landing {
+    background-color: #E9F1F7;
+    border: none;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.header p {
+    margin: 0;
+    font-size: 4rem;
+    font-weight: 700;
+}
+
+.X {
+    width: 3rem;
+}
+
+.X:hover {
+    filter: invert(30%);
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    gap: 3rem;
+    width: 100%;
+    flex-grow: 1;
+    text-align: left;
+}
+
+.info p {
+    margin: 0;
+    font-size: 1.9rem;
+}
+
+#skills {
+    gap: 2rem;
+}
+
+#languages {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+.bold {
+    font-size: 1.9rem;
+    font-weight: 700;
+}
+
+.technologies {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    flex-grow: 1;
+    width: 100%;
+}
+
+.technology {
+    flex-basis: 20vw;
+    flex-grow: 0;
+    height: 100%;
+    margin: 0.5rem;
+    padding: 1rem 0.5rem;
+    background-color: lightgray;
+    border-radius: 10px;
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    font-weight: 500;
+}
+
+#techName {
+    font-size: 1.8rem;
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+.desc {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.projects {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: start;
+    width: 100%;
+    height: 25rem; /* Adjust height to fit within the window */
+    overflow-y: scroll;
+    overflow-x: hidden;
+    padding-right: 1rem; /* To avoid overlap with scrollbar */
+}
+
+.project {
+    display: flex;
+    flex-direction: row;
+    align-items: center; /* Align items at the top */
+    justify-content: space-between;
+    margin-bottom: 1rem; /* Spacing between projects */
+    width: 100%;
+    min-height: 22rem; /* Set a minimum height */
+    box-sizing: border-box; /* Ensures padding doesn't affect height */
+    padding: 1rem 0.5rem 1rem 1rem;
+
+    border-radius: 15px;
+    background-color: lightgray;
+}
+
+.projectDesc {
+    flex-grow: 1;
+    padding-right: 1rem;
+    text-align: left;
+}
+
+.showcase {
+    max-width: 40rem; /* Restrict the width to fit within the project div */
+    height: auto; /* Let the height scale based on the width */
+    max-height: 21rem; /* Restrict the height to avoid overflowing the container */
+    object-fit: cover;
+    flex-grow: 0;
+    border-radius: 10px;
+}
+
+.next {
+    width: 1rem;
+    align-self: center;
+    flex-grow: 0;
+    margin-left: 0.5rem;
+}
+
+.next:hover {
+    filter: invert(30%);
+}
+
+#second {
+    justify-content: center;
+}
+
+
+
+
+/*# sourceMappingURL=2d3da30d599f1758760d.css.map*/
